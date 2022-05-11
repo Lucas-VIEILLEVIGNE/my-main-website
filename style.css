@@ -13,6 +13,11 @@ body{
     background-color: #2E2760;
 }
 
+.logo
+{
+    display: flex;
+}
+
 .logo img{
     margin-top: 1em;
     margin-left: 1em;
@@ -37,8 +42,12 @@ nav{
     border-radius: 0em 10em 10em 0em;
     z-index: -1;
     position: relative;
-    bottom: 11.3em;
     box-shadow: 0em 0em 1.5em black ;
+}
+
+.menu-responsive
+{
+    margin-left: auto
 }
 
 .menu-responsive .barre{
