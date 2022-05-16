@@ -72,10 +72,6 @@ body {
     color: var(--navbar-color);
     text-decoration: none;
 }
-.navbar-social{
-    padding: 0 50px;
-    display: flex;
-}
 .burger {
     display: none;
 }
@@ -177,6 +173,12 @@ body {
     }
     .show-nav .fourth {
         transition: all 1.4s ease-out;
+    }
+    .show-nav .fifth {
+        transition: all 1.5s ease-out;
+    }
+    .show-nav .six {
+        transition: all 1.5s ease-out;
     }
 }
 
