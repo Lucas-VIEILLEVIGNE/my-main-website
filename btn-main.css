@@ -1,12 +1,30 @@
+/* Reset */
+*{  
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+
+/* Body Style */
+
 body {
-  font-size: 16px;
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.3rem;
+  font-family: 'League Spartan', sans-serif;
   text-align: center;
   background-color: #f8faff;
 }
 
+
+/* Bouton Style */
+a{
+  text-decoration: none;
+}
+
 .bubbly-button {
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-family: 'League Spartan', sans-serif;
   display: inline-block;
   font-size: 1em;
   padding: 1em 2em;
@@ -20,6 +38,7 @@ body {
   border: none;
   cursor: pointer;
   position: relative;
+  top: 15em;
   transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
   box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
 }
@@ -62,6 +81,10 @@ body {
   display: block;
   animation: bottomBubbles ease-in-out 0.75s forwards;
 }
+
+
+/* Animation */
+
 @keyframes topBubbles {
   0% {
     background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;

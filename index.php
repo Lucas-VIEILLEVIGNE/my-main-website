@@ -7,9 +7,8 @@
 <body>
 <div class="main-content">
     <h1 class="titre">THIS IS MY WORLD  </h1>
-    <button type="submi" class="bubbly-button">discover</button>
 </div>    
-
+<button type="submi" class="bubbly-button"><a href="#">discover</a></button>
 </body>
 <script src="btn-main.js"></script>
 <script src="nav-bar.js"></script>

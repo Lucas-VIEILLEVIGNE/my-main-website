@@ -4,12 +4,12 @@
                     <a href="index.php"><img class="logo" src="Sources\Illustration_sans_titre.png" alt="Logo Lucas Vieillevigne représenté en dessin qui dessine sur une tablette graphique"></a>
             </div>          
             <ul class="navbar-links">
-                <li class="navbar-link first"><a href="#">EXPLORE</a></li>
-                <li class="navbar-link second"><a href="#">PORTFOLIO</a></li>
-                <li class="navbar-link third"><a href="#">ABOUT ME</a></li>
-                <li class="navbar-link fourth"><a href="contact.php">CONTACT</a></li>
-                <li class="navbar-link fifth"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li class="navbar-link six"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li class="navbar-link first lien"><a href="#">EXPLORE</a></li>
+                <li class="navbar-link second lien"><a href="#">PORTFOLIO</a></li>
+                <li class="navbar-link third lien"><a href="#">ABOUT ME</a></li>
+                <li class="navbar-link fourth lien"><a href="contact.php">CONTACT</a></li>
+                <li class="navbar-link fifth rsx"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="navbar-link six rsx"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
             </ul>
              
             <button class="burger">

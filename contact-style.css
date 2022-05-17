@@ -1,0 +1,116 @@
+/* Reset */
+*{  
+    color: white;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'League Spartan', sans-serif;
+  }
+
+
+/* Style Formulaire */
+
+.container{
+    display: flex;
+    position: relative;
+    top: 45vh;
+    left: 50%;
+    width: 150vh;
+    height: 80vh;
+    padding: 0px 0px 0px 40 px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    outline: none;
+}
+
+.h1-left{
+    font-size: 2em;
+    position: relative;
+    left: 5vh;
+}
+
+.left{
+    padding: 40px;
+    width: 75vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    outline: none;
+}
+
+.contact{
+    position: relative;
+    top: 3em
+}
+
+.identite{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .contact select{
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 3px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.container .contact .identite input{
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 3px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.container .contact .email input {
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 3px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.container .contact .phone input {
+    width: 50%;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 3px solid #fff;
+    outline: none;
+    background: transparent;
+}  
+
+.container .contact .message textarea{
+    resize: none;
+    background: transparent;
+}  
+
+/* Right Style */
+.right {
+    flex: 1;
+    background-color: black;
+    background-image: url(Sources/Miles_Morales.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0px 10px 10px 0px;
+}
