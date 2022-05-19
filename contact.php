@@ -10,14 +10,14 @@
     <div class="left">
         <div class="h1-left">
             <h1>
-                CONTACT ME
+                CONTACTEZ MOI !
             </h1>
         </div>
         <div class="contact">
             <form action="submit-contact.php" method="POST">
                 <div class="select">
                     <span class="focus"></span>
-                    <select id="standard-select" placeholder="Sujet">
+                    <select id="standard-select" placeholder="Sujet" name="sujet">
                         <option value="1">Projet Design</option>
                         <option value="2">Projet Dev-web</option>
                         <option value="3">Prise de contact</option>
@@ -28,7 +28,7 @@
                     <div class="prenom"><input type="text" id="#" name="first-name" required=""/>
                         <label>Prénom</label>
                     </div>
-                    <div class="nom"><input type="text" id="#" name="first-name" required=""/>
+                    <div class="nom"><input type="text" id="#" name="last-name" required=""/>
                         <label>Nom</label>
                     </div>
                 </div>
@@ -49,3 +49,19 @@
 
 
 <script src="nav-bar.js"></script>
+
+
+<?php
+    if(isset($_POST["message"])) {
+        $message = "Ce message vous à été envoyé via le formulaire de contact
+        Nom : ". $_POST["last-name"] ."
+        Prénom : ". $_POST["first-name"] ."
+        Email : ". $_POST["email"] ."
+        Tél : ". $_POST["phone"] ."
+        Méssage : ". $_POST["message"];
+        $retour = mail("contact.souleven@gmail.com",$message,"Form:contact.souleven@gmail.com" . "/r/n" . "Reply-to:" . $_POST["email"]);
+
+    }
+
+
+?>

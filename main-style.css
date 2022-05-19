@@ -15,13 +15,12 @@ margin: 0;
 
 body{
     font-family: 'League Spartan', sans-serif;
-    background: #2E2760;
+    background-image: url(Sources/low-poly-house.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .main-content{
-    background-image: url(Sources/low-poly-house.png);
     display: flex;
     justify-content: center;
     flex-direction: column;

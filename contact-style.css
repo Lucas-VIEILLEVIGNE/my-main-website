@@ -33,7 +33,7 @@
 }
 
 .h1-left{
-    font-size: 2em;
+    font-size: 1.5em;
     position: relative;
     left: 5vh;
 }
@@ -49,7 +49,7 @@
 
 .contact{
     position: relative;
-    top: 2em
+    top: 4em
 }
 
 .identite{
@@ -57,11 +57,16 @@
     justify-content: space-between;
 }
 
+.select{
+  position: relative;
+  bottom: 2em;
+}
+
 .select option{
     background-color: transparent;
 }
 
-select {    
+select {   
     appearance: none;
     background-color: transparent;
     border: none;
@@ -216,8 +221,9 @@ select::-ms-expand {
     pointer-events: none;
     transition: .5s;
   }
-
+  
 .container .contact .btn-contact input {
+    cursor: pointer;
     position: relative;
     background: transparent;
     left: 40%;
@@ -251,8 +257,7 @@ box-shadow: 0 0 5px #03e9f4,
 
 .container .contact input:focus ~ label,
 .container .contact input:valid ~ label {
-    top: -7em;
-    left: 0;
+    bottom : 7em;
     color: #03e9f4;
     font-size: 12px;
 }

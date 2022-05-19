@@ -54,7 +54,7 @@ a{
   left: -20%;
   z-index: -1000;
   transition: all ease-in-out 0.5s;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
 }
 .bubbly-button:before {
   display: none;
