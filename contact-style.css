@@ -1,11 +1,17 @@
 /* Reset */
 *{  
-    color: white;
+    color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
     outline: none;
     font-family: 'League Spartan', sans-serif;
   }
+
+  *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 
 /* Style Formulaire */
@@ -43,7 +49,7 @@
 
 .contact{
     position: relative;
-    top: 3em
+    top: 2em
 }
 
 .identite{
@@ -51,18 +57,84 @@
     justify-content: space-between;
 }
 
-.container .contact select{
-    width: 100%;
-    padding: 10px 0px;
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 3px solid #fff;
-    outline: none;
-    text-decoration: none;
-    background: transparent;
+.select option{
+    background-color: transparent;
 }
+
+select {    
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-size: 16px;
+    cursor: inherit;
+    line-height: inherit;
+    outline: none;
+  }
+
+select option {
+  margin: 40px;
+  background: #171330;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+  
+select option[value="1"] {
+  background: #171330;
+}
+  
+select option[value="2"] {
+  background: #171330;
+}
+  
+select option[value="3"] {
+  background: #171330;
+}
+  
+select option[value="4"] {
+    background: #171330;
+  }
+
+select::-ms-expand {
+    display: none;
+  }
+
+  :root {
+    --select-border: white;
+    --select-arrow: var(--select-border);
+  }
+
+  .select {
+    width: 100%;
+    min-width: 15ch;
+    max-width: 30ch;
+    border-bottom: 3px solid white;
+    padding-bottom: 0.2em;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background: transparent;    
+    display: grid;
+    grid-template-areas: "select";
+    align-items: center;
+    position: relative;
+  }
+
+  .select::after {
+    content: "";
+    width: 0.8em;
+    height: 0.5em;
+    background-color: var(--select-arrow);
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    justify-self: end;
+  }
+
+  select,
+  .select:after {
+    grid-area: select;
+  }
 
 .container .contact .nom input{
     width: 100%;
@@ -101,7 +173,7 @@
 }
 
 .container .contact .phone input {
-    width: 50%;
+    width: 40%;
     padding: 10px 0px;
     font-size: 16px;
     color: #fff;
@@ -110,6 +182,7 @@
     border-bottom: 3px solid #fff;
     outline: none;
     background: transparent;
+    grid-template-areas: "select";
 }  
 
 .container .contact .message textarea{
@@ -143,7 +216,6 @@
     pointer-events: none;
     transition: .5s;
   }
-
 
 .container .contact .btn-contact input {
     position: relative;

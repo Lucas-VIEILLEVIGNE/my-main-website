@@ -2,7 +2,7 @@
 <?php include_once('header.php'); ?>
 
 
-<link rel="stylesheet" href="main-style.css">
+<link rel="stylesheet" href="main-style.css">   
 <link rel="stylesheet" href="contact-style.css">
 
 
@@ -15,12 +15,15 @@
         </div>
         <div class="contact">
             <form action="submit-contact.php" method="POST">
-                        <select name="sujet" id="#" name="subject" placeholder="Sujet" required="">
-                            <option value="0">Projet Graphique</option>
-                            <option value="1">Projet Dev</option>
-                            <option value="2">Prise de contact</option>
-                            <option value="3">Autres demandes</option>    
-                        </select>     
+                <div class="select">
+                    <span class="focus"></span>
+                    <select id="standard-select" placeholder="Sujet">
+                        <option value="1">Projet Design</option>
+                        <option value="2">Projet Dev-web</option>
+                        <option value="3">Prise de contact</option>
+                        <option value="4">Autre demandes</option>
+                    </select>
+                </div>    
                 <div class="identite">
                     <div class="prenom"><input type="text" id="#" name="first-name" required=""/>
                         <label>Prénom</label>
