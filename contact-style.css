@@ -60,10 +60,23 @@
     border: none;
     border-bottom: 3px solid #fff;
     outline: none;
+    text-decoration: none;
     background: transparent;
 }
 
-.container .contact .identite input{
+.container .contact .nom input{
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 3px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.container .contact .prenom input{
     width: 100%;
     padding: 10px 0px;
     font-size: 16px;
@@ -102,7 +115,76 @@
 .container .contact .message textarea{
     resize: none;
     background: transparent;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 3px white solid;
+    border-radius: 4px;
+    padding: 10px;
 }  
+
+.container .contact label {
+    position: relative;
+    bottom:3.5em;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+
+  .container .contact .phone label {
+    position: relative;
+    bottom:3.5em;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+
+
+.container .contact .btn-contact input {
+    position: relative;
+    background: transparent;
+    left: 40%;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    border: none;
+    margin-top: 0.7em;
+  }
+
+
+/* Animation */
+.container .contact .btn-contact input:hover {
+background: #03e9f4;
+border: none;
+color: #fff;
+border-radius: 5px;
+box-shadow: 0 0 5px #03e9f4,
+            0 0 25px #03e9f4,
+            0 0 50px #03e9f4,
+            0 0 100px #03e9f4;
+}
+
+
+
+.container .contact input:focus ~ label,
+.container .contact input:valid ~ label {
+    top: -7em;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
 
 /* Right Style */
 .right {

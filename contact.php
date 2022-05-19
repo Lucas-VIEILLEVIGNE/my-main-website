@@ -15,19 +15,27 @@
         </div>
         <div class="contact">
             <form action="submit-contact.php" method="POST">
-                        <select name="sujet" id="#" name="subject" placeholder="Sujet">
+                        <select name="sujet" id="#" name="subject" placeholder="Sujet" required="">
                             <option value="0">Projet Graphique</option>
                             <option value="1">Projet Dev</option>
                             <option value="2">Prise de contact</option>
                             <option value="3">Autres demandes</option>    
                         </select>     
                 <div class="identite">
-                    <div class="prenom"><input type="text" id="#" name="first-name" placeholder ="Prénom" /></div>
-                    <div class="nom"><input type="text" id="#" name="first-name" placeholder ="Nom" /></div>
+                    <div class="prenom"><input type="text" id="#" name="first-name" required=""/>
+                        <label>Prénom</label>
+                    </div>
+                    <div class="nom"><input type="text" id="#" name="first-name" required=""/>
+                        <label>Nom</label>
+                    </div>
                 </div>
-                <div class="email"><input type="email" id="#" name="email" placeholder="Email" /></div>
-                <div class="phone"><input type="phone" id="#"name="phone" placeholder="Téléphone" /></div>
-                <div class="message"><textarea name="message" placeholder="Votre message..." required="" rows="15" cols="90"></textarea></div>
+                <div class="email"><input type="email" id="#" name="email" required=""/>
+                    <label>Email</label>
+                </div>
+                <div class="phone"><input type="tel" id="#"name="phone" placeholder="Téléphone (optionnel)" /></div>
+                <div class="message"><textarea name="message" placeholder="Votre message..." required="" rows="12" cols="70"></textarea></div>
+                <div class="btn-contact">
+                <input type="submit" id="#" name="button" value="Envoyer" /></div>
             </form>
         </div>
     </div>
