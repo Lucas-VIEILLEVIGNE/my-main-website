@@ -49,19 +49,3 @@
 
 
 <script src="nav-bar.js"></script>
-
-
-<?php
-    if(isset($_POST["message"])) {
-        $message = "Ce message vous à été envoyé via le formulaire de contact
-        Nom : ". $_POST["last-name"] ."
-        Prénom : ". $_POST["first-name"] ."
-        Email : ". $_POST["email"] ."
-        Tél : ". $_POST["phone"] ."
-        Méssage : ". $_POST["message"];
-        $retour = mail("contact.souleven@gmail.com",$message,"Form:contact.souleven@gmail.com" . "/r/n" . "Reply-to:" . $_POST["email"]);
-
-    }
-
-
-?>
