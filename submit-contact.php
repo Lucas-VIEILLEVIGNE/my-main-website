@@ -10,7 +10,9 @@
         <div class="left">
             <h1>Merci de votre message !</h1>
             <p>Votre message à bien été envoyé je vous recontacterai dans les plus brefs délais. Je vous invite à retourner vous balader en cliquant ici : </p>
+            <a href="index.php">  
             <button class="back-menu" type="button">Retour</button>
+            </a>
         </div>
 
         <?php
@@ -24,8 +26,6 @@
         $retour = mail("contact.souleven@gmail.com",$message,"Form:contact.souleven@gmail.com" . "/r/n" . "Reply-to:" . $_POST["email"]);
 
     }
-
-
 ?>
 
         <div class="right"></div>

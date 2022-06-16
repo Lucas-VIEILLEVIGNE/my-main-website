@@ -266,10 +266,8 @@ box-shadow: 0 0 5px #03e9f4,
 /* Right Style */
 .right {
     flex: 1;
-    background-color: black;
-    background-image: url(Sources/Miles_Morales.png);
-    background-size: cover;
+    background-image: url(Sources/contact.png);
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 0px 10px 10px 0px;
 }
