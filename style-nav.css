@@ -7,13 +7,17 @@
 
 /* Variables */
 .light-mode {
-    --navbar-color: #222;   
-    --navbar-bg-color: #f0f0f0;
+    --main-color: #6D0C9D;   
+    --main-bg-color: #C9CDFF;
+    --main-bg-img : url(sources/logo\ lulu\ panneau\ black.png);
+    --background-img : url(sources/low-poly-house-light.png);
 }
 
 .dark-mode {
-    --navbar-color: white;
-    --navbar-bg-color: #2E2760;
+    --main-color: white;
+    --main-bg-color: #2E2760;
+    --main-bg-img : url(sources/logo\ lulu\ panneau\ white.png);
+    --background-img :url(sources/low-poly-house.png);
 }
 
 :root {
@@ -22,12 +26,17 @@
 
 /* Reset */
 *{  
-    color: white;
+    color: var(--main-color);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
 }
+
+.fa-brands{
+    color: var(--main-color);
+}
+
 ul {
     list-style: none;
 }
@@ -56,11 +65,11 @@ body {
     display: flex;
     position: relative;
     align-items: center;
-    box-shadow: 0px 3px 20px #1e1a41;
+    /* box-shadow: 0px 3px 20px #1e1a41; */
     height: 75px;
     padding: 0px;
-    color: var(--navbar-color);
-    background: var(--navbar-bg-color);
+    color: var(--main-color);
+    background: var(--main-bg-color);
 }
 .navbar-links {
     display: flex;
@@ -79,7 +88,7 @@ body {
     padding: 0 50px;
 }
 .navbar-link > a {
-    color: var(--navbar-color);
+    color: var(--main-color);
     text-decoration: none;
 }
 .burger {
@@ -98,7 +107,7 @@ body {
         position: absolute;
         top: 65px;
         right: 0;
-        background: var(--navbar-bg-color);
+        background: var(--main-bg-color);
         transition: all .4s ease-in-out;
     }
     .show-nav .navbar-links {
@@ -139,7 +148,7 @@ body {
         display: block;
         width: 45px;
         height: 4px;
-        background: var(--navbar-color);
+        background: var(--main-color);
         border-radius: 3px;
         transition: all .4s ease-in-out;
     }
@@ -153,7 +162,7 @@ body {
         height: 4px;
         position: absolute;
         left: 0;
-        background: var(--navbar-color);
+        background: var(--main-color);
         border-radius: 3px;
         transition: all .4s ease-in-out;
     }
@@ -199,13 +208,10 @@ body {
         content: "";
         width: 0;
         height: 1px;
-        background:var(--navbar-color);
+        background:var(--main-color);
         transition:width .4s;
     }
     .navbar-link:hover > a:after {
         width: 100%;
     }
 }
-
-
-  
