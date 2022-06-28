@@ -7,12 +7,12 @@
 <body dat-barba="wrapper">
 
 
-        <!-- <div class="btn-sun">
+        <div class="btn-sun">
             <i class="fa-solid fa-sun fa-2xl"></i>
         </div>
         <div class="btn-moon">
             <i class="fa-solid fa-moon fa-2xl"></i>
-        </div> -->
+        </div>
 
 
     <div class="panneau dark-mode">

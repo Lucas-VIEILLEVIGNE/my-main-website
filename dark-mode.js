@@ -15,7 +15,7 @@ function themeNuitJour(){
     }
 }
 
-// themeNuitJour()
+themeNuitJour()
 
 
 // const btnToggle = document.querySelector('btn-toggle');

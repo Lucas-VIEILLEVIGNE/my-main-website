@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="main-style.css">   
 <!-- <link rel="stylesheet" href="contact-style.css"> -->
 
-<body data-barba="wrapper">
+<body class="dark-mode" data-barba="wrapper">
 
 <div class="wipe-transition"></div>  
 

@@ -3,3 +3,7 @@
 
 <link rel="stylesheet" href="main-style.css">   
 <link rel="stylesheet" href="explore-style.css">
+
+<body class="dark-mode">
+    
+</body>
